@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule configRelations="2" moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1998563950">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1998563950" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.ti.ccstudio.binaryparser.CoffParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.ti.ccstudio.errorparser.CoffErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.ti.ccstudio.errorparser.LinkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.ti.ccstudio.errorparser.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1998563950" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug">
+					<folderInfo id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1998563950." name="/" resourcePath="">
+						<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.DebugToolchain.1457091484" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.linkerDebug.275717919">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.2031892810" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F2812"/>
+								<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+								<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+								<listOptionValue builtIn="false" value="CCS_MBS_VERSION=5.1.0.01"/>
+								<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=2812_RAM_lnk.cmd"/>
+								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+								<listOptionValue builtIn="false" value="DSPBIOS_VERSION=5.41.13.42"/>
+								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+							</option>
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.290129702" name="Compiler version" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.1.0" valueType="string"/>
+							<targetPlatform id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.targetPlatformDebug.1540232051" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.targetPlatformDebug"/>
+							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.builderDebug.267731357" keepEnvironmentInBuildfile="false" name="GNU Make" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.builderDebug"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.compilerDebug.309251853" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.compilerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL.2050778735" name="Use large memory model (--large_memory_model, -ml)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY.1495771393" name="Unified memory (--unified_memory, -mt)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.1999979699" name="Processor version (--silicon_version, -v)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DEBUGGING_MODEL.696290111" name="Debugging model" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH.267082869" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${TCONF_OUTPUT_DIR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BIOS_INCLUDE_DIR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${RTDX_INCLUDE_DIR}&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING.82821949" name="Treat diagnostic &lt;id&gt; as warning (--diag_warning, -pdsw)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING" valueType="stringList">
+									<listOptionValue builtIn="false" value="225"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DISPLAY_ERROR_NUMBER.596295930" name="Emit diagnostic identifier numbers (--display_error_number, -pden)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__C_SRCS.402343005" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__C_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__CPP_SRCS.1632266402" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__CPP_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__ASM_SRCS.1723207757" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__ASM_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__ASM2_SRCS.931048046" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__ASM2_SRCS"/>
+							</tool>
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.linkerDebug.275717919" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.linkerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.OUTPUT_FILE.1082665844" name="Specify output file name (--output_file, -o)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.OUTPUT_FILE" value="&quot;${ProjName}.out&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.MAP_FILE.290980298" name="Input and output sections listed into &lt;file&gt; (--map_file, -m)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.MAP_FILE" value="&quot;${ProjName}.map&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.SEARCH_PATH.579593364" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.SEARCH_PATH" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${RTDX_LIB_DIR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BIOS_LIB_DIR}&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.DISPLAY_ERROR_NUMBER.1293283573" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.LIBRARY.349901926" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.LIBRARY" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+								</option>
+							</tool>
+							<tool id="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool.750560564" name="TConf" superClass="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool">
+								<inputType id="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool.inputType__TCF.1147992766" name="TConf Scripts" superClass="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool.inputType__TCF"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.ti.ccstudio.buildDefinitions.C2000.Release.1540896217">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1540896217" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.ti.ccstudio.binaryparser.CoffParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.ti.ccstudio.errorparser.CoffErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.ti.ccstudio.errorparser.LinkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.ti.ccstudio.errorparser.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1540896217" name="Release" parent="com.ti.ccstudio.buildDefinitions.C2000.Release">
+					<folderInfo id="com.ti.ccstudio.buildDefinitions.C2000.Release.1540896217." name="/" resourcePath="">
+						<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.ReleaseToolchain.891231743" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.linkerRelease.1386402448">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1812605723" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F2812"/>
+								<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+								<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+								<listOptionValue builtIn="false" value="CCS_MBS_VERSION=5.1.0.01"/>
+								<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=2812_RAM_lnk.cmd"/>
+								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+								<listOptionValue builtIn="false" value="DSPBIOS_VERSION=5.41.13.42"/>
+								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+							</option>
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1331375986" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.1.0" valueType="string"/>
+							<targetPlatform id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.targetPlatformRelease.1856503677" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.targetPlatformRelease"/>
+							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.builderRelease.572886787" name="GNU Make.Release" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.builderRelease"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.compilerRelease.1966671774" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.compilerRelease">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL.972663533" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY.1009237505" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.1278090266" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH.803612310" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${TCONF_OUTPUT_DIR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BIOS_INCLUDE_DIR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${RTDX_INCLUDE_DIR}&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING.2137964516" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING" valueType="stringList">
+									<listOptionValue builtIn="false" value="225"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DISPLAY_ERROR_NUMBER.737408468" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__C_SRCS.1930386995" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__C_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__CPP_SRCS.1163933601" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__CPP_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__ASM_SRCS.131946192" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__ASM_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__ASM2_SRCS.895889590" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compiler.inputType__ASM2_SRCS"/>
+							</tool>
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.linkerRelease.1386402448" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.exe.linkerRelease">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.OUTPUT_FILE.756355257" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.OUTPUT_FILE" value="&quot;${ProjName}.out&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.MAP_FILE.150732527" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.MAP_FILE" value="&quot;${ProjName}.map&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.SEARCH_PATH.2016298337" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.SEARCH_PATH" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${RTDX_LIB_DIR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BIOS_LIB_DIR}&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.DISPLAY_ERROR_NUMBER.136750887" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.LIBRARY.918173944" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.linkerID.LIBRARY" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+								</option>
+							</tool>
+							<tool id="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool.1334311732" name="TConf" superClass="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool">
+								<inputType id="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool.inputType__TCF.1590313344" name="TConf Scripts" superClass="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool.inputType__TCF"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="CANCard.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.989028874" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration"/>
+	<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+		<project-mappings>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.asmSource" language="com.ti.ccstudio.core.TIASMLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cHeader" language="com.ti.ccstudio.core.TIGCCLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cSource" language="com.ti.ccstudio.core.TIGCCLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxHeader" language="com.ti.ccstudio.core.TIGPPLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="com.ti.ccstudio.core.TIGPPLanguage"/>
+		</project-mappings>
+	</storageModule>
+	<storageModule moduleId="refreshScope"/>
+</cproject>

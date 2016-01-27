@@ -1,0 +1,1 @@
+-l"./CanCardcfg.cmd" "./source/DSP281x_GlobalVariableDefs.obj" "./main.obj" "./circ.obj" "./Uartmd.obj" "./ISAmd.obj" "./CanCardcfg_c.obj" "./CanCardcfg.obj" "./CANmd.obj" -l"libc.a" "../DSP281x_Headers_BIOS.cmd" "../F2812.cmd" 

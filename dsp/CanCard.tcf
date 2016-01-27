@@ -1,0 +1,121 @@
+utils.loadPlatform("ti.platforms.ezdsp2812");
+
+/* The following DSP/BIOS Features are enabled.  */
+bios.enableRealTimeAnalysis(prog);
+bios.enableRtdx(prog);
+bios.enableTskManager(prog);
+
+bios.GBL.PLLCR1 = 0x8;
+bios.GBL.CLKIN = 30000;
+bios.GBL.CLKOUT = 120.0000;
+
+bios.GBL.CALLUSERINITFXN = 1;
+bios.GBL.USERINITFXN = prog.extern("userInit");
+
+bios.MEM.instance("MSARAM").len = 0x400;
+bios.MEM.create("HEAP");
+bios.MEM.instance("HEAP").base = 0x000400;
+bios.MEM.instance("HEAP").len = 0x0400;
+
+bios.MEM.instance("H0SARAM").len = 0x001C00;
+
+
+bios.MEM.NOMEMORYHEAPS = 0;
+bios.MEM.instance("HEAP").createHeap = 1;
+bios.MEM.instance("HEAP").heapSize = 0x0400;
+bios.MEM.BIOSOBJSEG = prog.get("HEAP");
+bios.MEM.MALLOCSEG = prog.get("HEAP");
+bios.UDEV.create("uart0");
+bios.UDEV.instance("uart0").fxnTableType = "IOM_Fxns";
+bios.UDEV.instance("uart0").fxnTable = prog.extern("UARTMD_FXNS");
+bios.UDEV.instance("uart0").initFxn = prog.extern("UARTMD_init");
+bios.UDEV.create("CAN");
+bios.UDEV.instance("CAN").fxnTableType = "IOM_Fxns";
+bios.UDEV.instance("CAN").fxnTable = prog.extern("CANMD_FXNS");
+bios.UDEV.instance("CAN").initFxn = prog.extern("CANMD_init");
+bios.UDEV.create("ISA");
+bios.UDEV.instance("ISA").fxnTableType = "IOM_Fxns";
+bios.UDEV.instance("ISA").fxnTable = prog.extern("ISAMD_FXNS");
+bios.UDEV.instance("ISA").initFxn = prog.extern("ISAMD_init");
+bios.TSK.create("TSK0");
+bios.TSK.instance("TSK0").order = 1;
+bios.TSK.instance("TSK0").priority = 7;
+bios.TSK.instance("TSK0").fxn = prog.extern("task0");
+bios.TSK.create("TSK1");
+bios.TSK.instance("TSK1").order = 1;
+bios.TSK.instance("TSK1").priority = 11;
+bios.TSK.instance("TSK1").stackSize = 64;
+bios.TSK.instance("TSK1").fxn = prog.extern("task1");
+bios.TSK.create("TSK2");
+bios.TSK.instance("TSK2").order = 1;
+bios.TSK.instance("TSK2").priority = 2;
+bios.TSK.instance("TSK2").fxn = prog.extern("task2");
+bios.TSK.create("TSK3");
+bios.TSK.instance("TSK3").order = 1;
+bios.TSK.instance("TSK3").priority = 4;
+bios.TSK.instance("TSK3").fxn = prog.extern("task3");
+
+bios.TSK.create("TSK4");
+bios.TSK.instance("TSK4").order = 1;
+bios.TSK.instance("TSK4").priority = 3;
+bios.TSK.instance("TSK4").fxn = prog.extern("task4");
+
+bios.TSK.create("TSK5");
+bios.TSK.instance("TSK5").order = 1;
+bios.TSK.instance("TSK5").priority = 5;
+bios.TSK.instance("TSK5").stackSize = 64;
+bios.TSK.instance("TSK5").fxn = prog.extern("task5");
+
+bios.PRD.create("PRD0");
+bios.PRD.instance("PRD0").order = 1;
+bios.PRD.instance("PRD0").period = 20;
+bios.PRD.instance("PRD0").fxn = prog.extern("prd0");
+bios.PRD.instance("PRD0").mode = "one-shot";
+
+bios.PRD.create("PRD1");
+bios.PRD.instance("PRD1").order = 1;
+bios.PRD.instance("PRD1").period = 10;
+bios.PRD.instance("PRD1").fxn = prog.extern("IsaPrd");
+bios.PRD.instance("PRD1").mode = "one-shot";
+
+
+bios.PRD.create("PRD2");
+bios.PRD.instance("PRD2").order = 1;
+bios.PRD.instance("PRD2").period = 20;
+bios.PRD.instance("PRD2").fxn = prog.extern("CANPrd");
+bios.PRD.instance("PRD2").mode = "one-shot";
+
+bios.MEM.BIOSSEG = prog.get("LSARAM");
+bios.MEM.BIOSSEG = prog.get("H0SARAM");
+bios.MEM.TEXTSEG = prog.get("LSARAM");
+
+bios.MBX.create("MBX0");
+bios.MBX.instance("MBX0").messageSize = 16;
+bios.MBX.instance("MBX0").length = 8;
+bios.MBX.create("MBX1");
+bios.MBX.instance("MBX1").messageSize = 16;
+bios.MBX.instance("MBX1").length = 5;
+bios.MBX.create("MBX2");
+bios.MBX.instance("MBX2").messageSize = 16;
+bios.MBX.instance("MBX2").length = 64;
+
+bios.MEM.BIOSSEG = prog.get("FLASH");
+bios.MEM.TEXTSEG = prog.get("FLASH");
+
+
+bios.MEM.SYSINITSEG = prog.get("FLASH");
+bios.MEM.HWISEG = prog.get("FLASH");
+bios.MEM.RTDXTEXTSEG = prog.get("FLASH");
+bios.MEM.GBLINITSEG = prog.get("FLASH");
+bios.MEM.DATASEG = prog.get("FLASH");
+bios.MEM.CONSTSEG = prog.get("FLASH");
+bios.MEM.ECONSTSEG = prog.get("FLASH");
+bios.MEM.PINITSEG = prog.get("FLASH");
+bios.MEM.CINITSEG = prog.get("FLASH");
+bios.MEM.SWITCHSEG = prog.get("FLASH");
+
+
+
+// !GRAPHICAL_CONFIG_TOOL_SCRIPT_INSERT_POINT!
+
+prog.gen();
